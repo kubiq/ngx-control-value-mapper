@@ -9,6 +9,7 @@
   },
   "main": "public_api.js",
   "keywords": ["angular ngx form forms reactive-forms mapper formatter parser"],
+  "license": "MIT",
   "browserslist": [
     "last 2 version",
     "> 1%",

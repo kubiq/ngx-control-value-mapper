@@ -1,14 +1,23 @@
 {
   "name": "ngx-control-value-mapper",
   "description": "Formatter/Parser for Angular Forms, supports native and custom form controls",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "peerDependencies": {
-    "@angular/common": "^6.0.0",
-    "@angular/core": "^6.0.0",
-    "@angular/forms": "^6.0.0"
+    "@angular/common": "^6.x || ^7.x || ^8.x",
+    "@angular/forms": "^6.x || ^7.x || ^8.x",
+    "rxjs": "^5.x || s^6.x"
   },
+  "typings": "ngx-control-value-mapper.d.ts",
   "main": "public_api.js",
-  "keywords": ["angular ngx form forms reactive-forms mapper formatter parser"],
+  "keywords": [
+    "angular",
+    "ngx",
+    "form",
+    "reactive-forms",
+    "mapper",
+    "formatter",
+    "parser"
+  ],
   "license": "MIT",
   "browserslist": [
     "last 2 version",
@@ -16,5 +25,16 @@
     "maintained node versions",
     "not dead"
   ],
-  "author": "Jakub Pistek <mail@jakubpistek.cz>"
+  "author": {
+    "name": "Jakub Pistek",
+    "email": "mail@jakubpistek.cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kubiq/ngx-control-value-mapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kubiq/ngx-control-value-mapper/issues"
+  },
+  "homepage": "https://github.com/kubiq/ngx-control-value-mapper"
 }

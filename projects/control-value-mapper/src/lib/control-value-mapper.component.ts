@@ -1,7 +1,7 @@
-import {AfterContentInit, Component, ContentChild, Input, OnDestroy, Optional, Self} from '@angular/core';
+import { AfterContentInit, Component, ContentChild, Input, OnDestroy, Optional, Self } from '@angular/core';
 import { ControlValueAccessor, NgControl, NgModel } from '@angular/forms';
-import {ReplaySubject, Subject} from 'rxjs';
-import {takeUntil} from 'rxjs/operators';
+import { ReplaySubject, Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-control-value-mapper',

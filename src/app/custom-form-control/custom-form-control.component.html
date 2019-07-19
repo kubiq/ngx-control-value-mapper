@@ -1,0 +1,25 @@
+
+<div [formGroup]="form">
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+
+  <label>
+    Age:
+    <input type="number" min="0" max="200" formControlName="age">
+  </label>
+
+  <label>
+    Gender:
+    <label>
+      <input type="radio" formControlName="gender" name="gender" value="men">
+      Men
+    </label>
+    <label>
+      <input type="radio" formControlName="gender" name="gender" value="woman">
+      Woman
+    </label>
+
+  </label>
+</div>

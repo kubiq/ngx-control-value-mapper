@@ -4,7 +4,7 @@ import {ReplaySubject, Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 
 @Component({
-  selector: 'tb-control-value-mapper',
+  selector: 'ngx-control-value-mapper',
   template: '<ng-content></ng-content>',
 })
 export class ControlValueMapperComponent<T, U> implements ControlValueAccessor, AfterContentInit, OnDestroy {

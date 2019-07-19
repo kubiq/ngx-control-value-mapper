@@ -8,45 +8,45 @@
 
   <label>
     Parse phone number:
-    <tb-control-value-mapper [mapper]="formatPhoneNumber" [parser]="phoneParser" [formControl]="phoneControl">
+    <ngx-control-value-mapper [mapper]="formatPhoneNumber" [parser]="phoneParser" [formControl]="phoneControl">
       <input type="tel" [ngModel]>
-    </tb-control-value-mapper>
+    </ngx-control-value-mapper>
   </label>
   <p>Phone Control value: </p>
   <pre>{{phoneControl.value}}</pre>
 
   <label>
     Capitalize:
-    <tb-control-value-mapper [mapper]="capitalize" [formControl]="textControl">
+    <ngx-control-value-mapper [mapper]="capitalize" [formControl]="textControl">
       <input type="text" [ngModel]>
-    </tb-control-value-mapper>
+    </ngx-control-value-mapper>
   </label>
   <p>Control value: </p>
   <pre>{{textControl.value}}</pre>
 
   <label>
     Array to string and back:
-    <tb-control-value-mapper [mapper]="arrayMapper" [parser]="arrayParser" [formControl]="arrayControl">
+    <ngx-control-value-mapper [mapper]="arrayMapper" [parser]="arrayParser" [formControl]="arrayControl">
       <input type="text" [ngModel]>
-    </tb-control-value-mapper>
+    </ngx-control-value-mapper>
   </label>
   <p>Array Control value:</p>
   <pre>{{arrayControl.value | json}}</pre>
 
   <label>
     Optional value:
-    <tb-control-value-mapper [mapper]="optionMapper" [parser]="optionParser" [formControl]="optionControl">
+    <ngx-control-value-mapper [mapper]="optionMapper" [parser]="optionParser" [formControl]="optionControl">
       <input type="text" [ngModel]>
-    </tb-control-value-mapper>
+    </ngx-control-value-mapper>
   </label>
   <p>Optional Control value:</p>
   <pre>{{optionControl.value.toString() | json}}</pre>
 
   <label>
     Custom form control:
-    <tb-control-value-mapper [mapper]="customMapper" [formControl]="customControl">
+    <ngx-control-value-mapper [mapper]="customMapper" [formControl]="customControl">
       <app-custom-form-control [ngModel]></app-custom-form-control>
-    </tb-control-value-mapper>
+    </ngx-control-value-mapper>
   </label>
   <p>Custom Control value:</p>
   <pre>{{customControl.value | json}}</pre>
